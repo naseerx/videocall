@@ -45,7 +45,8 @@ class _VideoCallingState extends State<VideoCalling> {
               const SizedBox(
                 height: 20,
               ),
-              ElevatedButton(
+              MaterialButton(
+                color: Colors.teal,
                 onPressed: () {
                   Navigator.push(
                     context,
@@ -58,7 +59,7 @@ class _VideoCallingState extends State<VideoCalling> {
                     }),
                   );
                 },
-                child: const Text("join"),
+                child: const Text("join",style: TextStyle(fontSize: 20,color: Colors.white),),
               )
             ],
           ),
